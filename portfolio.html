@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="https://cdn1.iconfinder.com/data/icons/carbon-design-system-vol-6/32/portfolio-256.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <label  id="dark-change"></label>
+        <div class="container">
+            <img src="profile.jpg" alt="Profile Picture" class="profile-picture">
+            <h1>Kowen Emonaga</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="portfolio">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="portfolio-items">
+                <div class="portfolio-item">
+                    <img src="SharedScreenshot.jpg" alt="Project 1">
+                    <h3>Project 1</h3>
+                    <p>Network with 3 lan that have both static and dchp ip addresses</p>
+        </div>
+                <div class="portfolio-item">
+                    <img src="Database.png" alt="Project 2">
+                    <h3>Project 2</h3>
+                    <p>Simple sql database.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="project3.jpg" alt="Project 3">
+                    <h3>Project 3</h3>
+                    <p>A project that my friends and I worked on a long time ago, where I was responsible for handling models, animation, map making and barely scripting (dead game).</p>
+                </div>
+                <script>
+                    var content = document.getElementsByTagName('body')[0];
+                    var darkMode = document.getElementById('dark-change');
+                    darkMode.addEventListener('click', function(){
+                        darkMode.classList.toggle('active');
+                        content.classList.toggle('night');
+                    })
+                </script>
