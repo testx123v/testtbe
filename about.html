@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="https://cdn3.iconfinder.com/data/icons/feather-5/24/user-256.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <header>
+        <label  id="dark-change"></label>
+        <div class="container">
+            <img src="profile.jpg" alt="Profile Picture" class="profile-picture">
+            <h1>Kowen Emonaga</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<section id="about">
+    <div class="container">
+        <h2>About Me</h2>
+            <h2>Personal Information</h2>
+            <p><strong>Name:</strong> Kowen Emonaga</p>
+            <p><strong>Age:</strong> 21</p>
+            <p><strong>Gender:</strong> Male</p>
+            <p><strong>Date of Birth:</strong> August 15, 2002</p>
+        <h2>Programming language</h2>
+        <div class="skills-container">
+            <div class="skills-item">
+                <h3>JavaScript</h3>
+            </div>
+            <div class="skills-item">
+                <h3>C++ </h3>
+            </div>
+            <div class="skills-item">
+                <h3>HTML</h3>
+            </div>
+        </div>
+
+        <h2>Skills</h2>
+        <div class="education-item">
+            <h4>Adaptability</h4>
+        </div>
+        <div class="education-item">
+            <h4>Time management</h4>
+        </div>
+        <div class="education-item">
+            <h4>Creativity</h4>
+        </div>
+        <div class="education-item">
+                <h4>Active listening</h4>
+    </div>
+    <h2>Education</h2>
+    <div class="education-item">
+        <h4>Elementary</h4>
+        <p>FLCI</p>
+        <p>2008-2012</p>
+    </div>
+    <div class="education-item">
+        <h4>Highscool</h4>
+        <p>McLorenze Academy</p>
+        <p>2008-2012</p>
+    </div>
+<div class="education-item">
+    <h4>Senior Highscool</h4>
+    <p>ACLC COLLEGE OF TAYTAY</p>
+    <p>2008-2012</p>
+</div>
+    <div class="education-item">
+        <h4>College</h4>
+        <p>ACLC COLLEGE OF TAYTAY</p>
+        <p>2008-2012</p>
+</div>
+</section>
+        <script>
+            var content = document.getElementsByTagName('body')[0];
+            var darkMode = document.getElementById('dark-change');
+            darkMode.addEventListener('click', function(){
+                darkMode.classList.toggle('active');
+                content.classList.toggle('night');
+            })
+        </script>
+
+        
+</body>
+</html>
